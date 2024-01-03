@@ -1,0 +1,4 @@
+name: ChunkItemSpawner
+version: '${project.version}'
+main: com.github.johnclark96.chunkitemspawner.ChunkItemSpawner
+api-version: '1.20'

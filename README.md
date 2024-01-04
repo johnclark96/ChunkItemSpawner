@@ -7,3 +7,15 @@
 * All items spawned should despawn after 60 seconds.
 * There should be a config.yml setting to allow adjustment of the 30% chance from the first requirement.
 * Consider what can be async, and what cannot be async. You can get extra points for using CompletableFutures correctly. 
+
+## TODO
+
+ *[x] ~~Get new chunk~~
+ *[ ] Spawn a Diamond on new Chunk loaded at ground level
+ *[ ] Add Item DisplayName and Lore (Colorful)
+ *[ ] `Log Level Info` Store World Name, Coordinates, and Item Type Spawned
+ *[ ] Despawn items after 60 seconds
+ *[ ] Create a config for Percentage Chance (0 - 1)
+ *[ ] Use Async where appropriate
+ 
+ *[ ] EXTRA CREDIT: USE COMPLETABLE FUTURES CORRECTLY

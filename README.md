@@ -15,7 +15,7 @@
  *[x] Add Item DisplayName and Lore (Colorful)
  *[x] `Log Level Info` Store World Name, Coordinates, and Item Type Spawned
  *[x] Despawn items after 60 seconds
- *[ ] Create a config for Percentage Chance (0 - 1)
+ *[x] Create a config for Percentage Chance (0 - 1)
  *[ ] Use Async where appropriate
  
  *[ ] EXTRA CREDIT: USE COMPLETABLE FUTURES CORRECTLY

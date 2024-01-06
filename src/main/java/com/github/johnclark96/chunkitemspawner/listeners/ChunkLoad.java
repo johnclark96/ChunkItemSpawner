@@ -17,13 +17,18 @@ import static com.github.johnclark96.chunkitemspawner.items.Item.createDiamond;
 
 public class ChunkLoad implements Listener {
 
+    private final ChunkItemSpawner plugin;
     private Random random = new Random();
 
+    public ChunkLoad(ChunkItemSpawner plugin) {
+        this.plugin = plugin;
+    }
     @EventHandler
     public void onChunkLoad(ChunkLoadEvent event) {
         if(event.isNewChunk()) {
 
-            if(random.nextDouble() < 0.3) {
+            double spawnChance = plugin.getConfig().getDouble("spawn-chance");
+            if(random.nextDouble() < (spawnChance / 100.0)) {
                 spawnDiamond(event.getChunk().getX(), event.getChunk().getZ(), event.getWorld());
             }
         }

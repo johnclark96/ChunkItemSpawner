@@ -1,11 +1,9 @@
 package com.github.johnclark96.chunkitemspawner.items;
 
 import com.github.johnclark96.chunkitemspawner.ChunkItemSpawner;
-import org.bukkit.Chunk;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.enchantments.Enchantment;
-import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
@@ -17,8 +15,8 @@ import java.util.List;
 
 public class Item {
 
-    public static final NamespacedKey wandOneKey = new NamespacedKey(ChunkItemSpawner.getPlugin(), "my_first_wand");
-    public static final NamespacedKey diamondOneKey = new NamespacedKey(ChunkItemSpawner.getPlugin(), "my_first_diamond");
+    public static NamespacedKey wandOneKey;
+    public static NamespacedKey diamondOneKey;
 
     public static ItemStack createWand() {
         ItemStack wandOne = new ItemStack(Material.STICK, 1);
@@ -52,9 +50,9 @@ public class Item {
             meta.setDisplayName("§6§lDiamond §rof §ePotato");
 
             List<String> lore = new ArrayList<>();
-            lore.add("");
-            lore.add("");
-            lore.add("");
+            lore.add("§5Some other Lore here");
+            lore.add("§3Another line of Lore");
+            lore.add("§2And another one!!");
 
             meta.setLore(lore);
 
@@ -68,5 +66,10 @@ public class Item {
         }
 
         return diamondOne;
+    }
+
+    public static void initializeKeys(ChunkItemSpawner plugin) {
+        wandOneKey = new NamespacedKey(plugin, "wand_one_key");
+        diamondOneKey = new NamespacedKey(plugin, "diamond_one_key");
     }
 }

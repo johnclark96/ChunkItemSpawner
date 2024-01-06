@@ -25,9 +25,6 @@ public class ChunkLoad implements Listener {
 
             if(random.nextDouble() < 0.3) {
                 spawnDiamond(event.getChunk().getX(), event.getChunk().getZ(), event.getWorld());
-                for(Player player : Bukkit.getServer().getOnlinePlayers()) {
-                    player.sendMessage(ChatColor.LIGHT_PURPLE + "[INFO] An Item is over here! Get it quickly before its gone" + event.getChunk().getX() + ", " + event.getChunk().getZ());
-                }
             }
         }
     }

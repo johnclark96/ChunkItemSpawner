@@ -10,12 +10,13 @@
 
 ## TODO
 
- *[x] ~~Get new chunk~~
- *[ ] Spawn a Diamond on new Chunk loaded at ground level
- *[ ] Add Item DisplayName and Lore (Colorful)
- *[ ] `Log Level Info` Store World Name, Coordinates, and Item Type Spawned
- *[ ] Despawn items after 60 seconds
+ *[x] Get new chunk
+ *[x] Spawn a Diamond on new Chunk loaded at ground level
+ *[x] Add Item DisplayName and Lore (Colorful)
+ *[x] `Log Level Info` Store World Name, Coordinates, and Item Type Spawned
+ *[x] Despawn items after 60 seconds
  *[ ] Create a config for Percentage Chance (0 - 1)
  *[ ] Use Async where appropriate
  
  *[ ] EXTRA CREDIT: USE COMPLETABLE FUTURES CORRECTLY
+ *[x] Created Item as a PersistentDataContainer
